@@ -1,0 +1,120 @@
+html, body {
+    height: 200%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 200%;
+    background:linear-gradient(to bottom, rgb(108, 218, 255), rgb(0, 0, 103)) ;
+}
+
+.animTitle {
+    text-align: center;
+    font-size: 24px;
+    font-family: cursive;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    animation: anim 5s ease-in-out forwards;
+}
+
+@keyframes anim {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.interface {
+    max-width: 700px;
+    height: 600px;
+    background-color: black;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    border: solid 5px white;
+    border-radius: 20px;
+}
+
+.progressBar {
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.fill {
+    height: 10px;
+    width: 10%;
+    background-color: darkblue;
+}
+
+.question {
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 30px;    
+}
+
+.btn {
+    margin: auto;
+    display: block;
+    font-size: 24px;
+    border-radius: 10px;
+    font-family: geometric sans-serif;
+    color: darkblue;
+}
+
+.btn:hover {
+    background-color: rgb(255, 187, 0);
+    font-size: 50;
+}
+
+.btn:hover {
+    background-color: blue;
+    font-size: 28px;
+}
+
+.optionBtn {
+    display: auto;
+    margin: center;
+    height: 40%;
+    width: 40%;
+    margin-bottom: 5px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.optionBtn:hover {
+    background-color: aqua;
+}
+
+.timer {
+    background-color: darkblue;
+    text-align: center;
+    width: 100px;
+    border-radius: 60%;
+    font-size: 30px;
+    padding: 30px 0px;
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+    font-family: fantasy;
+    color: cyan;
+}
+
+.scoreLabel, .feedbackLabel {
+    color:aliceblue;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-family: inter;
+}
